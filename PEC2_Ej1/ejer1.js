@@ -23,7 +23,7 @@ console.log('findOne success');
 findOne(users, { key: 'name', value: 'Carlos' }, { onSuccess, onError });
 
 console.log('findOne error');
-findOne(users, { key: 'name', value: 'Ana' }, { onSuccess, onError });
+findOne(users, { key: 'name', value: 'Fermin' }, { onSuccess, onError });
 
 /*
 findOne success
