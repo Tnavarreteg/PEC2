@@ -23,13 +23,13 @@ const users = [                                                                 
  ];
 
 
-console.log('findOne success');                                                // imprime en consola
- async function msg1(){                                                        //
+console.log('findOne success');                                                  // imprime en consola
+ async function msg1(){                                                          // función creada
    try{
-    const msg1 = await findOne(users, { key: 'name', value: 'Carlos'});
+    const msg1 = await findOne(users, { key: 'name', value: 'Carlos'});          //    
     console.log(msg1);                                                           // imprime en consola la constante msg1 que almacena el resultado de la busqueda 
    } catch(error){
-     console.log(error);                                                         // imprime en consola
+     console.log(error);                                                         //imprime en consola mensaje de error en este caso no se cumple
    }  
  }
 msg1(); 
@@ -37,10 +37,10 @@ msg1();
 console.log('findOne error');                                                    // imprime en consola
 async function msg2(){
   try{
-   const msg2 = await findOne(users, { key: 'name', value: 'Jean'});
-   console.log(msg2);                                                                // imprime en consola
+   const msg2 = await findOne(users, { key: 'name', value: 'Fermin'});          
+   console.log(msg2);                                                            // imprime en consola el valor de msg2 que es el elemento encontrado en este caso no se cumple
   } catch(error){
-    console.log(error);                                                            // imprime en consola
+    console.log(error);                                                          // imprime en consola mensaje de error
   }  
 }
 msg2();
